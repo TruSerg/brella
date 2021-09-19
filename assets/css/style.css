@@ -315,7 +315,9 @@ html {
 }
 
 .audit__image {
-	padding: 55px 0px 0px 0px;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
 	max-width: 100%;
 }
 
@@ -358,11 +360,27 @@ html {
 
 @media (max-width: 479.98px) {
 	.audit__row {
-		padding: 0px 30px 0px 30px;
+		padding: 20px 30px 20px 30px;
 	}
 
 	.audit__item {
-		padding: 20px 0px 20px 0px;
+		padding: 0;
+	}
+
+	.audit__body {
+		margin-bottom: 25px;
+	}
+
+	.audit__body:first-child {
+		margin-bottom: 25px;
+	}
+
+	.audit__body:last-child {
+		margin: 0px 0px 0px -19px;
+	}
+
+	.audit__body:nth-child(2) {
+		margin-left: -6px;
 	}
 }
 
@@ -1206,7 +1224,6 @@ html {
 
 .footer-top__link:hover {
 	color: rgb(175, 170, 170);
-	
 }
 
 .footer-top__company {
